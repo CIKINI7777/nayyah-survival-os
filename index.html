@@ -1,0 +1,15 @@
+nayyah-survival-os/
+├── index.html          # Entry point tunggal (bukan absen.html lagi!)
+├── css/
+│   └── nayyah-hud.css  # Styling khusus survival mode
+├── js/
+│   ├── core.js         # Inisialisasi sensor & state management
+│   ├── navigator.js    # Logika navigasi offline + dead reckoning
+│   ├── mesh.js         # Web Bluetooth peer-to-peer comms
+│   └── audio.js        # Text-to-Speech & alert sounds
+├── assets/
+│   ├── map-offline.svg # Peta vektor statis area pabrik/kawasan
+│   ├── landmarks.json  # Database QR checkpoint & assembly points
+│   └── icons/          # Ikon panah, landmark, status (SVG ringan)
+├── sw.js               # Service Worker AGRESIF (cache everything)
+└── manifest.json       # PWA Manifest (standalone, fullscreen, no browser UI)
